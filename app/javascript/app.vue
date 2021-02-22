@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <ul class="header">
+      <li><router-link to="/">本一覧</router-link></li>
+      <li><router-link to="/create">本の登録</router-link></li>
+    </ul>
+    <div>
+      <router-view/>
+    </div>
   </div>
 </template>
 
